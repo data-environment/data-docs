@@ -11,5 +11,12 @@ dependencies = [
     "pydantic>=2.13.4",
 ]
 
+[tool.setuptools]
+include-package-data = true
+
 [tool.setuptools.packages.find]
 include = ["data_docs*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+"data_docs" = ["**/*.md"]
